@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Filer Rural Fire District – phone, address, and online message form.">
+  <title>Contact Us – Filer Rural Fire District</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/assets/images/logo.png" type="image/png">
+</head>
+<body>
+
+  <div id="site-header"></div>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="/index.html">Home</a> / Contact Us</p>
+      <h1>Contact Us</h1>
+      <p>Reach out with questions, requests, or general inquiries.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div style="background:#fef2f2;border:1px solid #fca5a5;border-radius:6px;padding:1rem 1.25rem;margin-bottom:2rem;display:flex;gap:.75rem;align-items:flex-start;">
+        <span style="font-size:1.5rem;flex-shrink:0;">🚨</span>
+        <div>
+          <strong style="color:#991b1b;">For emergencies, call 911.</strong>
+          <p style="color:#7f1d1d;font-size:.9rem;margin-top:.2rem;">This form and phone number are for non-emergency inquiries only. Do not use this form to report a fire or medical emergency.</p>
+        </div>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Form -->
+        <div>
+          <h2 class="section-title">Send a Message</h2>
+          <form id="contact-form" novalidate>
+            <!-- Replace YOUR_ACCESS_KEY with your Web3Forms access key -->
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+            <input type="hidden" name="subject" value="Website Contact Form – Filer Rural Fire District">
+            <input type="hidden" name="redirect" value="">
+            <input type="checkbox" name="botcheck" style="display:none;">
+
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Jane Smith">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="jane@example.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(208) 555-0100">
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="inquiry_type" required>
+                <option value="" disabled selected>Select a topic…</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Burn Permit">Burn Permit</option>
+                <option value="Safety Presentation Request">Safety Presentation / Safety House Request</option>
+                <option value="Volunteering">Volunteering</option>
+                <option value="Billing / Insurance">Billing / Insurance</option>
+                <option value="Public Records Request">Public Records Request</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;padding:.75rem;font-size:1rem;">Send Message</button>
+          </form>
+          <div class="form-success" id="form-success">
+            <strong>Message sent!</strong> Thank you for reaching out. We'll get back to you as soon as possible.
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h2 class="section-title">Get in Touch</h2>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Non-Emergency Phone</div>
+              <div class="contact-info-value"><a href="tel:+12083264111">(208) 326-4111</a></div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Station Address</div>
+              <div class="contact-info-value">100 S HWY 30<br>Filer, ID 83328</div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-label">Emergencies</div>
+              <div class="contact-info-value" style="color:#CC2020;">Call 911</div>
+            </div>
+          </div>
+
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.0!2d-114.5986!3d42.5693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s100+S+HWY+30%2C+Filer%2C+ID+83328!5e0!3m2!1sen!2sus!4v1"
+              width="100%"
+              height="280"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Filer Rural Fire District location map">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <script src="/js/components.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
