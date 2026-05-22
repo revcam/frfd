@@ -6,7 +6,7 @@ const HEADER_HTML = `
       <img src="/assets/images/logo.png" alt="Filer Rural Fire District logo">
       <div class="nav-brand-text">
         <span class="brand-main">Filer Rural Fire District</span>
-        <span class="brand-sub">Station 20 &mdash; Filer, Idaho</span>
+        <span class="brand-sub">Station 26 &mdash; Filer, Idaho</span>
       </div>
     </a>
     <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -50,7 +50,7 @@ const FOOTER_HTML = `
           <img src="/assets/images/logo.png" alt="Filer Rural Fire District">
           <div class="footer-brand-text">
             <strong style="color:#fff;font-size:1rem;">Filer Rural Fire District</strong>
-            <p>Serving the Filer community since 1928.<br>Station 20 &mdash; Filer, Idaho.</p>
+            <p>Serving the Filer community since 1928.<br>Station 26 &mdash; Filer, Idaho.</p>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@ const FOOTER_HTML = `
       <div>
         <h4>Contact</h4>
         <ul>
-          <li style="color:var(--gray);font-size:.875rem;">100 S HWY 30</li>
+          <li style="color:var(--gray);font-size:.875rem;">100 US-30</li>
           <li style="color:var(--gray);font-size:.875rem;">Filer, ID 83328</li>
           <li style="margin-top:.5rem;"><a href="tel:+12083264111">(208) 326-4111</a></li>
           <li><a href="/contact.html">Send a Message</a></li>
