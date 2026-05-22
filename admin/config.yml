@@ -1,0 +1,79 @@
+backend:
+  name: github
+  repo: revcam/frfd
+  branch: main
+  auth_endpoint: /api/auth
+
+# Media / image uploads go here
+media_folder: assets/images/uploads
+public_folder: /assets/images/uploads
+
+# ── Collections ────────────────────────────────────────────
+collections:
+
+  # News & Updates posts
+  - name: posts
+    label: News & Updates
+    folder: _posts
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: /news.html
+    fields:
+      - label: Title
+        name: title
+        widget: string
+        hint: "Headline for this update"
+
+      - label: Date
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DD"
+        date_format: "MMMM D, YYYY"
+        time_format: false
+        default: ""
+
+      - label: Excerpt
+        name: excerpt
+        widget: text
+        hint: "Short summary shown on the news listing page (1–2 sentences)"
+
+      - label: Featured Image
+        name: image
+        widget: image
+        required: false
+        hint: "Optional photo for this post"
+
+      - label: Body
+        name: body
+        widget: markdown
+        hint: "Full post content (optional — excerpt alone is fine for short updates)"
+
+  # Site-wide settings (alert banner, contact overrides)
+  - name: settings
+    label: Site Settings
+    files:
+
+      - label: Alert Banner
+        name: alert
+        file: data/alert.json
+        fields:
+          - label: Show Alert Banner
+            name: active
+            widget: boolean
+            default: false
+            hint: "Toggle the red banner at the top of every page"
+          - label: Alert Message
+            name: message
+            widget: string
+            hint: "e.g. Burn ban in effect — no open burning until further notice"
+          - label: Link URL
+            name: link
+            widget: string
+            required: false
+            hint: "Optional link URL for more info"
+          - label: Link Text
+            name: link_text
+            widget: string
+            required: false
+            hint: "e.g. Learn more"
