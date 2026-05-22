@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: revcam/frfd
+  repo: frfdadmin/frfdwebsite
   branch: main
   auth_endpoint: /api/auth
 
